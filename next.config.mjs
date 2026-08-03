@@ -2,7 +2,7 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const BACKEND = process.env.BACKEND_ORIGIN || "http://127.0.0.1:8099";
+const BACKEND = process.env.BACKEND_ORIGIN || "https://dalabozor-backend.up.railway.app";
 const WEB_ROOT = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig = {
