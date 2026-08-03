@@ -1,0 +1,37 @@
+{
+  "name": "dalabozor-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3059",
+    "build": "next build",
+    "start": "next start -p 3059",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc --noEmit --pretty false",
+    "test": "node --import tsx --test lib/*.test.ts"
+  },
+  "dependencies": {
+    "next": "^15.5.18",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.0",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@yandex/ymaps3-types": "^1.0.20315584",
+    "autoprefixer": "10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.18",
+    "postcss": "^8.5.22",
+    "tailwindcss": "3.4.14",
+    "tsx": "^4.20.3",
+    "typescript": "5.5.4"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "8.5.10",
+      "sharp": "0.35.0"
+    }
+  }
+}
